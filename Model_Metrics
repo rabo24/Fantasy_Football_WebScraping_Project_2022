@@ -1,0 +1,8 @@
+I created a logistic regression model using the "liblinear" solve with L2 regularization selected. The target was a binary variable I 
+created that indicated whether a player beat expectations or not. The data set was small with around 500 observations(there arent many 
+draftable fantasy football players). My out of sample dataset was small with only 24 observations(the players I drafted).
+
+My logistic regression model scored pretty well on out-of-sample data. The model was accurate in predicting 23/24 players if they beat expectations 
+for an accuracy rate of ~95%. The baseline accuracy for the data was 70% players beat expectations so my predictions beat the baseline predictions by
+around 35%. I predicted 16/17 true positives  with one false positive and 7/7 true negatives. The Area-Under-the_Curve (AUC) metric is .97 which is 
+incredible considering anything above .6 is a good model and .5 is essentially a random guess. Please see my AUC graph below:
